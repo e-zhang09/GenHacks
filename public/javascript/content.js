@@ -12,8 +12,19 @@ let all_leaves = [];
 function onLoad () {
    $(".headline").delay(250).animate({"opacity": "1"}, 1550);
 
+   let log_css = "color: rgb(0,100,0); font-size:40px; font-weight:bold";
+   console.log("%cSet \"stopLeaves\" in localStorage to \"true\" to stop the leaves from spawning!!",log_css);
+
+   let log_css_two = "color: rgb(100,0,0); font-size:20px; font-weight:bold";
+   console.log("%cIf you got any suggestions, please send an email to genhacks2019@gmail.com. Thanks!!",log_css_two);
+
    let retry_counter = 0;
    if(isMobile) retry_counter = 6;
+   if (typeof(Storage) !== "undefined") {
+      if(window.localStorage.getItem('stopLeaves')!==null && window.localStorage.getItem('stopLeaves')==='true'){
+         retry_counter = 6;
+      }
+   }
    // console.log(isMobile, retry_counter);
 
    let retry_interval = setInterval(
