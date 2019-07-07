@@ -69,10 +69,15 @@ body{
 
 .hackathon-signup {
   margin-bottom: 4px;
+  margin-top: 7px;
   font-size: 34px;
 
   a {
-    color: var(--text-font-color);;
+    color: var(--text-font-color);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #81d185c7;
     text-decoration: none;
 
   }
@@ -140,7 +145,7 @@ body{
 .hackathon-name {
   font-family: lemon-milk, serif;
   font-weight: bold;
-  font-size: 55px;
+  font-size: calc(30px + 5vw);
   letter-spacing: 2px;
   line-height: 75px;
   text-indent: -15px;
@@ -451,7 +456,6 @@ path{
     //padding-top: 45px;
     margin-top: 70px;
     a {
-      background-color: #81d185c7;
       padding: 8px 15px;
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
@@ -669,4 +673,10 @@ path{
     padding-bottom: 10px;
   }
     .not-an-actual-class {float:none;}
+}
+
+@media only screen and (max-width: 300px) {
+  .hackathon-name{
+    font-size: calc(20px + 3vw);
+  }
 }

@@ -53,6 +53,10 @@ app.get(
     }
 );
 
+app.get('/dot', (req, res) => {
+    res.send(".");
+});
+
 app.get('/*', (req, res) => {
     if(isLocal){
         console.log(req.path);
