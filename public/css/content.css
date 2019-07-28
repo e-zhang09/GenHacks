@@ -243,6 +243,11 @@ body {
   color: var(--text-font-color);
 }
 
+.mapouter {
+  position: relative;
+  text-align: right;
+}
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
@@ -512,9 +517,6 @@ path {
   }
 
   .mapouter {
-    display: unset;
-    position: relative;
-    text-align: right;
     height: 250px;
     width: 100%;
   }

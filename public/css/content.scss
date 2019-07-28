@@ -260,7 +260,8 @@ body{
 }
 
 .mapouter {
-  //display: none;
+  position: relative;
+  text-align: right;
 }
 
 .gmap_canvas {
@@ -532,9 +533,6 @@ path{
     margin-bottom: 24px;
   }
   .mapouter{
-    display: unset;
-    position: relative;
-    text-align: right;
     height: 250px;
     width: 100%;
   }
