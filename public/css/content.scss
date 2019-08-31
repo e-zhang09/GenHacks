@@ -69,10 +69,15 @@ body{
 
 .hackathon-signup {
   margin-bottom: 4px;
+  margin-top: 7px;
   font-size: 34px;
 
   a {
-    color: var(--text-font-color);;
+    color: var(--text-font-color);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #81d185c7;
     text-decoration: none;
 
   }
@@ -124,6 +129,13 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  .header{
+    font-size: 35px;
+  }
+  .text-content{
+    font-size: 25px;
+  }
 }
 
 .hackathon-time {
@@ -133,7 +145,7 @@ body{
 .hackathon-name {
   font-family: lemon-milk, serif;
   font-weight: bold;
-  font-size: 55px;
+  font-size: calc(30px + 5vw);
   letter-spacing: 2px;
   line-height: 75px;
   text-indent: -15px;
@@ -248,7 +260,8 @@ body{
 }
 
 .mapouter {
-  //display: none;
+  position: relative;
+  text-align: right;
 }
 
 .gmap_canvas {
@@ -295,6 +308,16 @@ body{
   color: var(--text-font-color);
 }
 
+path{
+  fill: var(--text-font-color);
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  padding-left: 2.5px;
+}
+
 .perma-link:hover{
   color: #336b29;
 }
@@ -326,6 +349,8 @@ body{
 
 .about-us-container{
   text-align: center;
+  z-index: 1000;
+  padding: 0 14vw;
 }
 
 .hackathon-logo{
@@ -347,6 +372,9 @@ body{
   a{
     color:unset;
     text-decoration: none;
+  }
+  svg{
+    height: 25.7px;
   }
 }
 
@@ -408,6 +436,12 @@ body{
     top: 83vh;
   }
 
+  .give-us-sponsors{
+    .header{
+      font-size: 50px;
+    }
+  }
+
   .container-arrow:hover {
     cursor: pointer;
     color: rgb(77, 77, 77);
@@ -423,7 +457,6 @@ body{
     //padding-top: 45px;
     margin-top: 70px;
     a {
-      background-color: #81d185c7;
       padding: 8px 15px;
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
@@ -500,9 +533,6 @@ body{
     margin-bottom: 24px;
   }
   .mapouter{
-    display: unset;
-    position: relative;
-    text-align: right;
     height: 250px;
     width: 100%;
   }
@@ -528,8 +558,6 @@ body{
   .about-us-container{
     display: flex;
     flex-wrap: wrap;
-    z-index: 1000;
-    padding: 0 14vw;
   }
 
   .leaf-image{
@@ -643,4 +671,10 @@ body{
     padding-bottom: 10px;
   }
     .not-an-actual-class {float:none;}
+}
+
+@media only screen and (max-width: 300px) {
+  .hackathon-name{
+    font-size: calc(20px + 3vw);
+  }
 }
