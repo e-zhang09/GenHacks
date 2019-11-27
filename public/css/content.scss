@@ -324,6 +324,7 @@ path{
   fill: var(--text-font-color);
 }
 
+
 .image-container{
   display: flex;
   justify-content: center;
@@ -342,6 +343,12 @@ path{
   border-radius: 5px;
   -o-object-fit: cover;
   object-fit: cover;
+  transition: all .2s ease-in-out;
+}
+
+.person-portrait:hover{
+  //transform: scale(1.015);
+  //cursor: pointer;
 }
 
 .person-name{

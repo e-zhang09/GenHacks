@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="description" content="GenHacks is a 24-hours hackathon in the San Francisco Bay Area. Any students, experienced or not, are welcome to participate.">
-    <meta name="keywords" content="startup weekend, hackathon, coding challenges, what is a hackathon, hackton, hackfest, hack day, hacking challenges, genhacks">
+    <meta content="GenHacks is a 24-hours hackathon in the San Francisco Bay Area. Any students, experienced or not, are welcome to participate."
+          name="description">
+    <meta content="startup weekend, hackathon, coding challenges, what is a hackathon, hackton, hackfest, hack day, hacking challenges, genhacks"
+          name="keywords">
     <title>GenHacks</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,12 +23,13 @@
         gtag('config', 'UA-142125117-1');
     </script>
 
-    <div id="loadOverlay" style="background-color:#303030; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
-    <link rel="preload" href="/css/content.css" as="style">
-    <link rel="preload" href="/font/LemonMilkbold.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preconnect" href="maps.gstatic.com">
-    <link rel="preconnect" href="maps.googleapis.com">
-    <link rel="preconnect" href="kit-free.fontawesome.com">
+    <div id="loadOverlay"
+         style="background-color:#303030; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
+    <link as="style" href="/css/content.css" rel="preload">
+    <link as="font" crossorigin href="/font/LemonMilkbold.woff" rel="preload" type="font/woff">
+    <link href="maps.gstatic.com" rel="preconnect">
+    <link href="maps.googleapis.com" rel="preconnect">
+    <link href="kit-free.fontawesome.com" rel="preconnect">
 
     <!-- Icons-->
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
@@ -42,6 +45,16 @@
     <link href="/css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<noscript style="font-size: large;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 20vh;
+  z-index: 2001;">
+    Javascript is required for this website to load!
+</noscript>
 <!--<div id="navbar-container"></div>-->
 <main>
     <section class="content fade-in" id="leaf-container">
